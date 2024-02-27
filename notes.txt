@@ -1,0 +1,3 @@
+1. added feed with the new assets name of feed version 
+2. feed end point is not working.- Alaska,Canada,Translantic
+3. For 300x250 should we follow the master demo version ? and keep the headline " Enjoy Onboard Credit"
