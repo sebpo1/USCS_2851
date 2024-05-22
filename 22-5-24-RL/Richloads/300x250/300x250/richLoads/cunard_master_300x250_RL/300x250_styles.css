@@ -1,0 +1,573 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+
+@font-face {
+    font-family: "AkkuratRegular";
+    src: url("fonts/lineto-akkurat-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SangBleuSansLight";
+    src: url("fonts/SangBleuSans-Light-WebS.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+sub,
+sup {
+    /* Specified in % so that the sup/sup is the
+     right size relative to the surrounding text */
+    font-size: 55%;
+    /* Zero out the line-height so that it doesn't
+     interfere with the positioning that follows */
+    line-height: 0;
+    /* Where the magic happens: makes all browsers position
+     the sup/sup properly, relative to the surrounding text */
+    position: relative;
+    /* Note that if you're using Eric Meyer's reset.css, this
+     is already set and you can remove this rule */
+    vertical-align: baseline;
+}
+
+sup {
+    /* Move the superscripted text up */
+    top: -0.75em; left: -1px;
+}
+
+sub {
+    /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+    bottom: -0.25em;
+}
+
+html,
+body {
+    font-family: 'Lora', serif;
+    height: 250px;
+    width: 300px;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	 line-height: 1;
+}
+
+
+
+#container {
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    height: 250px;
+    width: 300px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.abso {
+    position: absolute;
+}
+
+.logo1>img {
+    width: 300px;
+    height: 250px;
+}
+
+.cta,
+.ctaSale {
+	font-family: 'AkkuratRegular';
+	font-weight:500;
+    color: #fefefe;
+    background-color: #F16521;
+    font-size: 16.24px;
+    border-left-color: #fefefe;
+    /*opacity: 0;*/
+    /*bottom: -1px;
+    right: -1px;*/
+    padding: 5px 7px 3px 7px;
+    color: #fff;
+    white-space: nowrap;
+    /*letter-spacing: 0.05em;*/
+    z-index: 5000;
+    opacity: 0;
+}
+
+
+
+/*#ctaIcon {
+    height: 50%;
+    width: auto;
+}*/
+
+#cta_arrow_r {
+    display: inline-block;
+    margin: 0px 0px 0px 5px;
+    vertical-align: top;
+    width: 0px;
+    height: 0px;
+    border-left: solid 0.4em rgb(200, 30, 50);
+    border-bottom: solid 0.4em transparent;
+    border-top: solid 0.4em transparent;
+    border-left-color: inherit;
+}
+
+#arrows {
+    opacity: 0;
+    z-index: 11000;
+}
+
+.arrow {
+    width: 24px;
+    height: 30px;
+    font-family: auto;
+    top: 96px;
+    padding-bottom: 18px;
+    z-index: 10000;
+    /*centering*/
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: box;
+    box-pack: center;
+    box-align: center;
+    /*individual arrows defaults*/
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#right_arrow {
+    right: 0;
+}
+
+
+/*splash animation*/
+
+#splash {
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-size: auto;
+    -webkit-background-size: 300px 250px;
+    -o-background-size: 300px 250px;
+    background-size: 300px 250px;
+    display: none;
+}
+
+@keyframes introScale {
+    from {
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    to {
+        left: -400px;
+        top: -320px;
+        transform: scale(80);
+        -webkit-transform: scale(80);
+    }
+}
+
+.zoomIntro {
+    animation: introScale 1.5s 1 cubic-bezier(0.5, 0, 1, 0.7) forwards;
+    -webkit-animation: introScale 1.5s 1 cubic-bezier(0.5, 0, 1, 0.7) forwards;
+    -moz-animation: introScale 1.5s 1 cubic-bezier(0.5, 0, 1, 0.7) forwards;
+    -o-animation: introScale 1.5s 1 cubic-bezier(0.5, 0, 1, 0.7) forwards;
+}
+
+
+/*carousel slides*/
+
+.dot {
+    position: relative;
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #88949f;
+    border-radius: 5px;
+    margin-left: 5px;
+    z-index: 11000;
+}
+
+#dotNav {
+    bottom: 0px;
+    left: 0px;
+    width: 60px;
+    height: 11px;
+}
+
+#dotNav div:first-child {
+    background-color: #FFFFFF;
+}
+
+.frames {
+    /*margin-left: auto;
+    margin-right: auto;
+    position: absolute;*/
+    /*TODO: need for carousel sliding;??
+    /*left: 300px;*/
+    /*width: 134px;
+    padding-left: 8px;
+    padding-right: 8px;*/
+    /*opacity: 0;*/
+}
+
+#f1 .fbg,
+#f1 .head,
+#f1 .subhead1,
+#f1 .subhead2,
+#f1 .logo1,
+#f1 .logo2,
+#f1 .click {
+    left: 0;
+    opacity: 1;
+}
+
+#f1 .click {
+    display: block;
+}
+
+
+/*.head,
+.subhead1,
+.subhead2, {
+    opacity: 0;
+}*/
+
+.fbg {
+    left: 300px;
+}
+
+.head,
+.subhead1,
+.subhead2 {
+    left: 300px;
+    font-weight: 300;
+}
+
+
+/*#f2, #f3, #f4 {
+left: 300px;
+}*/
+
+.click {
+    display: none;
+}
+
+.fbg {
+    z-index: 1000;
+}
+
+.head,
+.subhead1,
+.subhead2 {
+    z-index: 2000;
+}
+
+.logo1,
+.logo2 {
+    z-index: 4000;
+    opacity: 0;
+}
+
+
+
+.medallion {
+    z-index: 6000;
+}
+
+#splash {
+    z-index: 11000;
+}
+
+.click {
+    z-index: 9000;
+    height: 250px;
+    width: 300px;
+}
+
+#ctaLegal {
+    z-index: 10000;
+    opacity: 0;
+    font-family: 'AkkuratRegular';
+    min-width: 96px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/*.head .text,
+.subhead1 .text,
+.subhead2 .text {
+    padding: 1px 6px;
+    width: 288px;
+}*/
+
+#framesContainer {
+    opacity: 0;
+}
+
+.text {
+    /*opacity: 0;*/
+    text-align: center;
+    line-height: 1.2em;
+    z-index: 4500;
+}
+
+.wrapper {
+    height: 250px;
+    /*width: 300px;*/
+    /*left: 0px;*/
+    padding: 1px 6px;
+    width: 288px;
+    overflow: hidden;
+}
+
+.subhead1  {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.subhead2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.head {
+    font-family: 'SangBleuSansLight';
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     line-height: 1.2em;
+}
+
+.subhead1,
+.subhead2 {
+    font-family: 'SangBleuSansLight';
+    padding: 1px 6px;
+    width: 288px;
+    text-align: center;
+    line-height: 1.2em;
+     /*white-space: nowrap;*/
+}
+
+
+/*LEGAL*/
+
+#legalOverlay {
+    top: 300px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 85, 160, 0.9);
+    z-index: 11000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#legalOverlayText {
+    max-width: 280px;
+    max-height: 230px;
+    /*padding: 10px;*/
+    line-height: 1.2em;
+    text-align: center;
+    font-family: 'SangBleuSansLight';
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+#legalOverlayClose {
+    right: 4px;
+    top: -5px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1em;
+}
+
+
+/*OCEAN MEDALLION */
+
+#ctaMedallion {
+    left: 4px;
+    top: 4px;
+    opacity: 0;
+    display: none;
+    z-index: 9500;
+}
+
+#medallionOverlay {
+    top: -300px;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: rgba(0, 85, 160, 0.9);
+    z-index: 11000;
+}
+
+#medallionOverlayText {
+    max-width: 260px;
+    padding: 10px;
+    margin-left: -2px;
+    max-height: 230px;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+#medallionOverlayClose {
+    right: 2px;
+    bottom: 0px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1em;
+}
+.head>div{
+    width:300px; text-align:center;letter-spacing: 0.1em;
+}
+.subhead1>div,.subhead2>div{width:300px;text-align:center;}
+
+strong {font-weight: bold;}

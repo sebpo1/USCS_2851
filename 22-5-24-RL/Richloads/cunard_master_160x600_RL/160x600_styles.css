@@ -1,0 +1,647 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+
+@font-face {
+    font-family: "AkkuratRegular";
+    src: url("fonts/lineto-akkurat-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SangBleuSansLight";
+    src: url("fonts/SangBleuSans-Light-WebS.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+sub,
+sup {
+    /* Specified in % so that the sup/sup is the
+     right size relative to the surrounding text */
+    font-size: 55%;
+    /* Zero out the line-height so that it doesn't
+     interfere with the positioning that follows */
+    line-height: 0;
+    /* Where the magic happens: makes all browsers position
+     the sup/sup properly, relative to the surrounding text */
+    position: relative;
+    /* Note that if you're using Eric Meyer's reset.css, this
+     is already set and you can remove this rule */
+    vertical-align: baseline;
+}
+
+sup {
+    /* Move the superscripted text up */
+    top: -0.75em;
+    left: -1px;
+}
+
+sub {
+    /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+    bottom: -0.25em;
+}
+
+@font-face {}
+
+html,
+body {
+    font-family: 'Lora', serif;
+    height: 600px;
+    width: 160px;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+}
+
+#container {
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    height: 600px;
+    width: 160px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.abso {
+    position: absolute;
+}
+
+.logo1>img {
+    width: 160px;
+    height: 600px;
+}
+
+.cta,
+.ctaSale {
+    font-family: 'AkkuratRegular';
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 500;
+    color: #fefefe;
+    background-color: #F16521;
+    font-size: 16.24px;
+    border-left-color: #fefefe;
+    /*opacity: 0;*/
+    /*bottom: -1px;
+    right: -1px;*/
+    padding: 7px 17px 5px 17px;
+    color: #fff;
+    white-space: nowrap;
+    /* letter-spacing: 0.13em;*/
+    z-index: 5000;
+    opacity: 0;
+    /* border: 1px solid; */
+    /* border-color: #666; */
+}
+
+
+/*#ctaIcon {
+    height: 50%;
+    width: auto;
+}*/
+
+#cta_arrow_r {
+    display: inline-block;
+    margin: 0px 0px 0px 5px;
+    vertical-align: top;
+    width: 0px;
+    height: 0px;
+    border-left: solid 0.4em rgb(200, 30, 50);
+    border-bottom: solid 0.4em transparent;
+    border-top: solid 0.4em transparent;
+    border-left-color: inherit;
+}
+
+#arrows {
+    opacity: 0;
+    z-index: 11000;
+}
+
+#left_arrow,
+#right_arrow {
+    opacity: 0;
+}
+
+.arrow {
+    width: 24px;
+    height: 30px;
+    font-family: auto;
+    top: 270px;
+    padding-bottom: 18px;
+    z-index: 10000;
+    /*centering*/
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: box;
+    box-pack: center;
+    box-align: center;
+    /*individual arrows defaults*/
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+#right_arrow {
+    right: 0;
+}
+
+
+/*splash animation*/
+
+#splash {
+    width: 160px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    background-size: auto;
+    -webkit-background-size: 160px 600px;
+    -o-background-size: 160px 600px;
+    background-size: 160px 600px;
+    display: none;
+}
+
+@keyframes introScale {
+    from {
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+
+    to {
+        left: 1000px;
+        top: -800px;
+        transform: scale(220);
+        -webkit-transform: scale(220);
+    }
+}
+
+.zoomIntro {
+    animation: introScale 1.5s 1 cubic-bezier(0.5, 0, 1, 0.7) forwards;
+    -webkit-animation: introScale 1.5s 1 cubic-bezier(0.5, 0, 1, 0.7) forwards;
+    -moz-animation: introScale 1.5s 1 cubic-bezier(0.5, 0, 1, 0.7) forwards;
+    -o-animation: introScale 1.5s 1 cubic-bezier(0.5, 0, 1, 0.7) forwards;
+}
+
+
+/*carousel slides*/
+
+
+/*#f1 {
+    left: 0;
+}*/
+
+.dot {
+    position: relative;
+    float: left;
+    width: 7px;
+    height: 7px;
+    background-color: #88949f;
+    border-radius: 5px;
+    margin-left: 6px;
+    z-index: 11000;
+}
+
+#dotNav {
+    width: 60px;
+    height: 11px;
+    left: 50px;
+    bottom: 8px;
+}
+
+#dotNav div:first-child {
+    background-color: #FFFFFF;
+}
+
+.frames {
+    /*margin-left: auto;
+    margin-right: auto;
+    position: absolute;*/
+    /*TODO: need for carousel sliding;??
+    /*left: 300px;*/
+    /*width: 134px;
+    padding-left: 8px;
+    padding-right: 8px;*/
+    /*opacity: 0;*/
+}
+
+#f1 .fbg,
+#f1 .head,
+#f1 .subhead1,
+#f1 .subhead2,
+#f1 .logo1,
+#f1 .logo2,
+#f1 .click {
+    left: 0;
+    opacity: 1;
+}
+
+#f1 .click {
+    display: block;
+}
+
+
+/*.head,
+.subhead1,
+.subhead2, {
+    opacity: 0;
+}*/
+
+.fbg {
+    left: 160px;
+}
+
+.head,
+.subhead1,
+.subhead2 {
+    left: 160px;
+}
+
+
+/*#f2, #f3, #f4 {
+left: 300px;
+}*/
+
+.click {
+    display: none;
+}
+
+.fbg {
+    z-index: 1000;
+}
+
+.head,
+.subhead1,
+.subhead2 {
+    z-index: 2000;
+}
+
+.logo1,
+.logo2 {
+    z-index: 4000;
+    opacity: 0;
+}
+
+
+
+.medallion {
+    z-index: 6000;
+}
+
+#splash {
+    z-index: 11000;
+}
+
+.click {
+    z-index: 9000;
+    height: 600px;
+    width: 160px;
+}
+
+#ctaLegal {
+    font-family: 'AkkuratRegular';
+    z-index: 10000;
+    opacity: 0;
+    letter-spacing: 0.06em;
+    min-width: 108px;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+/*.head .text,
+.subhead1 .text,
+.subhead2 .text {
+    padding: 1px 6px;
+    width: 288px;
+}*/
+
+#framesContainer {
+    opacity: 0;
+}
+
+.text {
+    /*opacity: 0;*/
+    text-align: center;
+    line-height: 1.27em;
+    z-index: 4500;
+    /*    width: 158px;*/
+}
+
+.wrapper {
+    height: 600px;
+    padding: 1px 6px;
+    width: 146px;
+    overflow: hidden;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+.head {
+    font-family: 'SangBleuSansLight';
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.subhead1 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'SangBleuSansLight';
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.subhead2 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'SangBleuSansLight';
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.head,
+.subhead1,
+.subhead2 {
+    padding: 1px 6px;
+    /*    width: 148px;*/
+    text-align: center;
+    line-height: 1em;
+    /*white-space: nowrap;*/
+}
+
+.head {
+    /*
+    white-space: normal;
+    min-width: 100px;
+    max-width: 148px;
+*/
+}
+
+
+/*LEGAL*/
+
+#legalOverlay {
+    top: 600px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 85, 160, 0.9);
+    z-index: 11000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#legalOverlayText {
+    max-width: 118px;
+    max-height: 230px;
+    /*padding: 10px;*/
+    line-height: 1.3em;
+    text-align: center;
+    font-family: 'SangBleuSansLight';
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+#legalOverlayClose {
+    right: 4px;
+    top: -5px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1em;
+}
+
+
+/*OCEAN MEDALLION */
+
+#ctaMedallion {
+    left: 4px;
+    bottom: 4px;
+    width: 34px;
+    height: 34px;
+    max-width: 34px;
+    max-height: 34px;
+    opacity: 0;
+    display: none;
+    z-index: 9500;
+}
+
+#ctaMedallion>img {
+    max-width: 34px;
+    max-height: 34px;
+}
+
+#medallionOverlay {
+    bottom: -600px;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: rgba(0, 85, 160, 0.9);
+    z-index: 11000;
+}
+
+#medallionOverlayText {
+    max-width: 160px;
+    padding: 10px;
+    margin-left: -2px;
+    max-height: 230px;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+#medallionOverlayClose {
+    right: 2px;
+    bottom: 0px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1em;
+}
+
+#guide {
+    position: absolute;
+    z-index: 99999;
+    opacity: 0.5;
+    display: none;
+    left: -1px;
+    top: -1px;
+    height: 600px;
+    width: 160px;
+    /*background-image: url("guide/0003_Destination%20Alt%20-%20Image%20Gallery%204.jpg");*/
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .arrow {
+        height: 20px;
+        padding-top: 10px;
+    }
+
+    #legalOverlayText {
+        left: 20px;
+        top: 185px;
+    }
+
+    #legalOverlayClose {
+        top: -2px;
+    }
+}
+
+.head>div {
+    width: 150px;
+    /* padding: 0px 5px 0px 5px; */
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.subhead1>div,
+.subhead2>div {
+    width: 158px;
+    /* padding: 0px 2px 0px 2px; */
+    text-align: center;
+}
