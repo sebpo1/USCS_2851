@@ -1,0 +1,31 @@
+1.UNIVERSAL/ALL SIZES/ALL DESTINATIONS:
+
+IMCS and RTG legal copy changed with alignment
+
+2.Alaska RTG Feed & Non-Feed/728x90:
+
+versions are updated updated  
+
+3. Alaska & Caribbean RTG Feed & Non-Feed & IMCS Non-Feed/970x250:
+
+Alaska- RTG - updated
+Caribbean- RTG - updated
+IMCS Non-Feed- updated
+
+4. Transatlantic RTG Feed/All sizes EXCEPT 970x250:
+Versions are updated
+
+5. Europe RTG Feed/300x600:
+
+original one: 
+Frame02: Departing:<br>[%departureportname1%]<br>[%departuredate1%]
+12,#000,190,24
+Frame04: Departing:<br>[%departureportname3%]<br>[%departuredate3%]
+
+Updated one: 
+Frame 02: <style>.subhead2 > div {max-width:150px }</style>Departing: [%departureportname1%]<br>[%departuredate1%]
+12,#000,373,24
+Frame 04:<style>.subhead2 > div {max-width:150px }</style>Departing: [%departureportname3%]<br>[%departuredate3%]
+
+
+
